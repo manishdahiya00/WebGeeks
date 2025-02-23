@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -25,48 +27,46 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Basic Web Package",
     popular: 0,
-    price: 0,
+    price: 499,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Ideal for small businesses and individuals looking for a professional online presence.",
+    buttonText: "Get Started",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "Custom 5-page website",
+      "Mobile responsive design",
+      "1 month free support",
+      "Fast & secure hosting",
     ],
   },
   {
-    title: "Premium",
+    title: "Business Web Package",
     popular: 1,
-    price: 45,
+    price: 999,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "Perfect for businesses looking for a scalable and dynamic website with advanced features.",
+    buttonText: "Choose Plan",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "Custom 10-page website",
+      "3 months free support",
+      "Speed & security enhancements",
+      "Fast & secure hosting",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Enterprise Web Solution",
     popular: 0,
-    price: 120,
+    price: 2499,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "A comprehensive solution for enterprises needing a high-performance, fully customized web platform.",
+    buttonText: "Contact Us",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Fully custom design & development",
+      "Enterprise-grade security",
+      "SEO & marketing strategy",
+      "Ongoing support & maintenance",
+      "Custom integrations & automation",
     ],
   },
 ];
@@ -75,15 +75,16 @@ export const PricingSection = () => {
   return (
     <section className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Our Pricing
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Web Development Packages
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        Choose the perfect plan for your business and get a stunning website
+        that drives results.
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
@@ -106,7 +107,7 @@ export const PricingSection = () => {
 
                 <div>
                   <span className="text-3xl font-bold">${price}</span>
-                  <span className="text-muted-foreground"> /month</span>
+                  <span className="text-muted-foreground"> /one-time</span>
                 </div>
               </CardHeader>
 
@@ -120,17 +121,6 @@ export const PricingSection = () => {
                   ))}
                 </div>
               </CardContent>
-
-              <CardFooter>
-                <Button
-                  variant={
-                    popular === PopularPlan?.YES ? "default" : "secondary"
-                  }
-                  className="w-full"
-                >
-                  {buttonText}
-                </Button>
-              </CardFooter>
             </Card>
           )
         )}

@@ -1,5 +1,9 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
+import { Marquee } from "@devnomic/marquee";
+import "@devnomic/marquee/dist/index.css";
 import { icons } from "lucide-react";
 
 interface BenefitsProps {
@@ -10,28 +14,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "ShieldCheck",
+    title: "Reliable Security",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Our platform ensures top-tier security for your data and transactions, giving you peace of mind.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "TrendingUp",
+    title: "Scalable Growth",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Easily scale your business with our flexible solutions designed to adapt as you grow.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Globe",
+    title: "Global Reach",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Expand your horizons with our worldwide network, connecting you to more customers and opportunities.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Rocket",
+    title: "Faster Performance",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Experience lightning-fast speeds and optimized performance to enhance your productivity.",
   },
 ];
 
@@ -43,12 +47,11 @@ export const BenefitsSection = () => {
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Why Choose Us?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Our innovative solutions are designed to help you succeed by
+            providing reliability, scalability, and performance.
           </p>
         </div>
 

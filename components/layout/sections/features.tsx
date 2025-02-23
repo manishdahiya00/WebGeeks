@@ -1,5 +1,9 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
+import { Marquee } from "@devnomic/marquee";
+import "@devnomic/marquee/dist/index.css";
 import { icons } from "lucide-react";
 
 interface FeaturesProps {
@@ -10,40 +14,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "Server",
+    title: "Cloud Hosting",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Secure and scalable cloud hosting solutions tailored to your business needs.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Code",
+    title: "Custom Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Get bespoke software solutions designed specifically for your business objectives.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Database",
+    title: "Data Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Efficient and secure data storage, retrieval, and analysis for better decision-making.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "MonitorSmartphone",
+    title: "Cross-Platform Support",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Deliver seamless user experiences across all devices and operating systems.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "ShieldAlert",
+    title: "Cybersecurity",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Robust security measures to protect your business from online threats and data breaches.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Users",
+    title: "User-Centric Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Intuitive and engaging UI/UX designs that enhance user satisfaction and conversion rates.",
   },
 ];
 
@@ -55,13 +59,12 @@ export const FeaturesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        What Sets Us Apart
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Our comprehensive suite of services ensures your business stays ahead in
+        the digital landscape.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -1,4 +1,5 @@
 "use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
@@ -26,52 +27,51 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: "https://randomuser.me/api/portraits/men/21.jpg",
+    name: "Ravi Sharma",
+    userName: "Shop Owner",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "The service was excellent! My shop now has a website that attracts more customers.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: "https://randomuser.me/api/portraits/women/34.jpg",
+    name: "Priya Verma",
+    userName: "Teacher",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "I needed a simple and effective website for my tuition classes, and this service delivered beyond expectations!",
     rating: 4.8,
   },
-
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    name: "Amit Patel",
+    userName: "Restaurant Owner",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Very satisfied with the website design and easy booking system. It has helped increase our reservations!",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    image: "https://randomuser.me/api/portraits/women/25.jpg",
+    name: "Neha Singh",
+    userName: "Freelance Artist",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Great experience! Now I have a beautiful portfolio website to showcase my artwork.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    image: "https://randomuser.me/api/portraits/men/38.jpg",
+    name: "Vikram Rao",
+    userName: "Photographer",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "The website is sleek and easy to navigate. My clients love the gallery section!",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    image: "https://randomuser.me/api/portraits/women/29.jpg",
+    name: "Anjali Mehta",
+    userName: "Boutique Owner",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The service was professional and efficient. My boutique's website looks amazing!",
     rating: 4.9,
   },
 ];
@@ -104,11 +104,16 @@ export const TestimonialSection = () => {
               <Card className="bg-muted/50 dark:bg-card">
                 <CardContent className="pt-6 pb-0">
                   <div className="flex gap-1 pb-6">
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`size-4 ${
+                          i < Math.round(review.rating)
+                            ? "fill-primary text-primary"
+                            : "text-gray-300"
+                        }`}
+                      />
+                    ))}
                   </div>
                   {`"${review.comment}"`}
                 </CardContent>
@@ -116,11 +121,11 @@ export const TestimonialSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarImage src={review.image} alt={review.name} />
+                      <AvatarFallback>
+                        {review.name.charAt(0)}
+                        {review.name.split(" ")[1]?.charAt(0)}
+                      </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">

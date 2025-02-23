@@ -1,3 +1,5 @@
+"use client";
+
 import { Separator } from "@/components/ui/separator";
 import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
@@ -10,49 +12,50 @@ export const FooterSection = () => {
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-
-              <h3 className="text-2xl">Shadcn</h3>
+              <h3 className="text-2xl">YourWebDevAgency</h3>
             </Link>
           </div>
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
+              <Link
+                href="mailto:manishdahiya0944@gmail.com"
+                className="opacity-60 hover:opacity-100"
+              >
+                Email Us
               </Link>
             </div>
-
+            <div>
+              <Link
+                href="https://www.linkedin.com/in/kuldeep-rana-961659150"
+                className="opacity-60 hover:opacity-100"
+              >
+                LinkedIn
+              </Link>
+            </div>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Twitter
               </Link>
             </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
+            <h3 className="font-bold text-lg">Services</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
+                Web Development
               </Link>
             </div>
-
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
+                Mobile Development
               </Link>
             </div>
-
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
+                UI/UX Design
               </Link>
             </div>
           </div>
@@ -60,41 +63,13 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
+                FAQs
+              </Link>
+            </div>
+            <div>
+              <Link href="#contact" className="opacity-60 hover:opacity-100">
                 Contact Us
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
               </Link>
             </div>
           </div>
@@ -106,10 +81,10 @@ export const FooterSection = () => {
             &copy; 2024 Designed and developed by
             <Link
               target="_blank"
-              href="https://github.com/leoMirandaa"
+              href="https://yourwebdevagency.com"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Leo Miranda
+              WebGeeks
             </Link>
           </h3>
         </section>
