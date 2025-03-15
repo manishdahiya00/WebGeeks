@@ -8,15 +8,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "plus.unsplash.com",
       },
       {
         protocol: "https",
-        hostname: "media.licdn.com"
-      },
-      {
-        protocol: "https",
-        hostname: "instagram.fixc1-3.fna.fbcdn.net",
+        hostname: "images.unsplash.com",
       }
     ],
   },

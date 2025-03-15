@@ -30,7 +30,7 @@ interface SocialNetworkProps {
 const teamList: TeamProps[] = [
   {
     imageUrl:
-      "https://instagram.fixc1-3.fna.fbcdn.net/v/t51.2885-19/475963303_993375199319074_3456134594880657868_n.jpg?_nc_ht=instagram.fixc1-3.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2AG8CcN6ZH1C03sC4yW5ZLNUqlNHwGc-oAOAwhzhoLvHvYWq_wtjftwcjPkYFr8iLwRE1wkyy-xrbv4eORT6SE2T&_nc_ohc=P5sSaSjzNRYQ7kNvgFKcMj_&_nc_gid=b4deea58e0094df8956d2f1ed11fd730&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AYAzL0of3jkW4o79fqWb86M3QopXW21MdOlsq8lsmF7ZIw&oe=67C0583D&_nc_sid=7d3ac5",
+      "https://plus.unsplash.com/premium_photo-1666298865061-f63a92df5de4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8",
     firstName: "Manish",
     lastName: "Dahiya",
     positions: ["Software Developer", "Co-Owner"],
@@ -47,7 +47,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQF1t7E5Fq3P3Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714665606492?e=1746057600&v=beta&t=yMLIW0OcqLjMlmGX8jbcKX_l66DuUyG-kPIoV5IofPk",
+      "https://images.unsplash.com/photo-1610088441520-4352457e7095?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnxlbnwwfHwwfHx8MA%3D%3D",
     firstName: "Kuldeep",
     lastName: "Rana",
     positions: ["Marketing", "Co-Owner"],
