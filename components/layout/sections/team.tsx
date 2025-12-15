@@ -48,13 +48,13 @@ const teamList: TeamProps[] = [
   {
     imageUrl:
       "https://images.unsplash.com/photo-1610088441520-4352457e7095?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnxlbnwwfHwwfHx8MA%3D%3D",
-    firstName: "Kuldeep",
-    lastName: "Rana",
+    firstName: "John",
+    lastName: "Doe",
     positions: ["Marketing", "Co-Owner"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/kuldeep-rana-961659150",
+        url: "https://www.linkedin.com/in",
       },
     ],
   },

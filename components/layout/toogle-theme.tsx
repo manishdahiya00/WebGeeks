@@ -11,15 +11,9 @@ export const ToggleTheme = () => {
       variant="ghost"
       className="w-full justify-start"
     >
-      <div className="flex gap-2 dark:hidden">
-        <Moon className="size-5" />
-      </div>
-
-      <div className="dark:flex gap-2 hidden">
-        <Sun className="size-5" />
-      </div>
-
-      <span className="sr-only">Trocar de tema</span>
+      <Sun className="size-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <Moon className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
     </Button>
   );
 };
